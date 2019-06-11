@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>UML Table Creator</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>
+        <style>
+        </style>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div id="app">
+            <div class="header">
+                UML Class Creator
+            </div>
+            <div class="body">
+                <div class="button-bar">
+                    <fancy-button @append="addItem" title="ADD"></fancy-button>
+                </div>
+                <class-list @update="updateList" :fucking-list="classes">
+
+                </class-list>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
